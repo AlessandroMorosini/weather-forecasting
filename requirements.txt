@@ -1,10 +1,12 @@
-https://github.com/deepmind/graphcast/archive/master.zip
+git+https://github.com/deepmind/graphcast.git@main
 cartopy
 google-cloud-storage
+PyYAML
+cftime
+xarray
+numpy
+pandas
+matplotlib
 jax
 jaxlib
 dm-haiku
-matplotlib
-numpy
-xarray
-PyYAML

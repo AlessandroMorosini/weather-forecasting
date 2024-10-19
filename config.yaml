@@ -1,18 +1,24 @@
-# Configuration file for the project
+# config.yaml
 
-gcs_bucket_name: dm_graphcast
+# Google Cloud Storage settings
+gcs_bucket_name: "dm_graphcast"
 
-model_file_name: >
-  params/GraphCast_small - ERA5 1979-2015 - resolution 1.0 - pressure levels 13 - mesh 2to5 - precipitation input and output.npz
+# Model parameters
+model_file_name: "params/GraphCast_small - ERA5 1979-2015 - resolution 1.0 - pressure levels 13 - mesh 2to5 - precipitation input and output.npz"
 
-dataset_file_name: >
-  dataset/source-era5_date-2022-01-01_res-0.25_levels-13_steps-01.nc
+# Dataset settings
+dataset_file: "dataset/source-era5_date-2022-01-01_res-0.25_levels-13_steps-01.nc"
 
-normalization_files:
-  diffs_stddev_by_level: stats/diffs_stddev_by_level.nc
-  mean_by_level: stats/mean_by_level.nc
-  stddev_by_level: stats/stddev_by_level.nc
-
+# Training and evaluation steps
 train_steps: 1
-eval_steps_offset: 2 # Number of time steps to exclude from evaluation
+
+# Normalization data files
+normalization_files:
+  diffs_stddev_by_level: "stats/diffs_stddev_by_level.nc"
+  mean_by_level: "stats/mean_by_level.nc"
+  stddev_by_level: "stats/stddev_by_level.nc"
+
+# Random seed for reproducibility
 random_seed: 0
+
+# Additional configurations (add as needed)
