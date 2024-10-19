@@ -1,0 +1,10 @@
+https://github.com/deepmind/graphcast/archive/master.zip
+cartopy
+google-cloud-storage
+jax
+jaxlib
+dm-haiku
+matplotlib
+numpy
+xarray
+PyYAML
